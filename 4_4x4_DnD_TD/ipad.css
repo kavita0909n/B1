@@ -1,0 +1,121 @@
+body
+{
+	zoom:0.1;
+	-webkit-zoom:0.1;
+	-ms-zoom:0.1;
+	-o-zoom:0.1;
+	-moz-zoom:0.1;
+	min-width: 90%;
+	max-width: 90%;
+	transform: scale(0.91);
+	-webkit-transform: scale(0.91);
+	-ms-transform: scale(0.91);
+	-moz-transform: scale(0.91);
+	-o-transform: scale(0.91);
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform-origin: top left;
+}	
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+	body
+	{
+		zoom:0.1;
+		-webkit-zoom:0.1;
+		-ms-zoom:0.1;
+		-o-zoom:0.1;
+		-moz-zoom:0.1;
+		min-width: 85%;
+		max-width: 85%;
+		transform: scale(0.91);
+		-webkit-transform: scale(0.91);
+		-ms-transform: scale(0.91);
+		-moz-transform: scale(0.91);
+		-o-transform: scale(0.91);
+		-webkit-transform-origin: top left;
+		-moz-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		-webkit-transform-origin: top left;
+	}	
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+	body
+	{
+		zoom:0.91;
+		min-width: 90%;
+		-webkit-zoom:0.1;
+		-ms-zoom:0.1;
+		-o-zoom:0.1;
+		-moz-zoom:0.1;
+		transform: scale(0.91);
+		-webkit-transform: scale(0.91);
+		-ms-transform: scale(0.91);
+		-moz-transform: scale(0.91);
+		-o-transform: scale(0.91);
+		-webkit-transform-origin: top left;
+		-moz-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		-webkit-transform-origin: top left;
+		max-width: 90%;
+	}	
+}
+/* iPhone */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+	html,body
+	{
+		zoom:0.7;
+		min-width: 90%;
+		-webkit-zoom:0.7;
+		-ms-zoom:0.7;
+		-o-zoom:0.7;
+		-moz-zoom:0.7;
+		transform: scale(0.77);
+		-webkit-transform: scale(0.77);
+		-ms-transform: scale(0.77);
+		-moz-transform: scale(0.77);
+		-o-transform: scale(0.77);
+		-webkit-transform-origin: top left;
+		-moz-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		-webkit-transform-origin: top left;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 4)
+and (orientation : portrait) { 
+	html,body
+	{
+		zoom:0.7;
+		min-width: 90%;
+		-webkit-zoom:0.9;
+		-ms-zoom:0.9;
+		-o-zoom:0.9;
+		-moz-zoom:0.9;
+		transform: scale(0.97);
+		-webkit-transform: scale(0.88);
+		-ms-transform: scale(0.88);
+		-moz-transform: scale(0.88);
+		-o-transform: scale(0.88);
+		-webkit-transform-origin: top left;
+		-moz-transform-origin: top left;
+		-o-transform-origin: top left;
+		-ms-transform-origin: top left;
+		-webkit-transform-origin: top left;
+	}
+
+}

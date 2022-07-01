@@ -1,0 +1,306 @@
+<link rel="stylesheet" type="text/css" href="dle_home.css">
+<link rel="stylesheet" type="text/css" href="ipad.css">
+<meta name="viewport" content="width=device-width">
+
+
+<div class="bg"></div>
+<div class="img"></div>
+<div gray link="1.html" hand class="top_butt1a"></div>
+<div gray link="dle_quiz2.html" hand class="top_butt2a"></div>
+<div gray link="dle_quiz3.html" hand class="top_butt3a"></div>
+
+<div gray link="1.html" hand class="first"></div>
+<div gray link="1.html" hand class="back"></div>
+<div gray link="1.html" hand class="next"></div>
+<div gray link="2.html" hand class="last"></div>
+
+<div gray link="1.html" hand class="home"></div>
+<div gray link="1.html" class="vocab_butt"></div>
+
+<!--* div hand onclick='window.open("1.pdf","_blank")' class="print"-->
+
+
+<div  class="topic"></div>
+
+<div hand class="reset" onclick="resetall1()"></div>
+<div hand class="corr" onclick="checkAnswers()"></div>
+<div hand class="sol" onclick="soltuion()"></div>
+
+<div class="guidelines"></div>
+
+
+<div class="drag_drop_text"></div>
+<!--*div class="flag_eng"></div-->
+
+
+<div class="text1"></div>
+<div class="text2"></div>
+<div class="text3"></div>
+<div class="text4"></div>
+
+
+<div play="1.mp3" class="aud1"></div>
+<div play="2.mp3" class="aud2"></div>
+<div play="2.mp3" class="aud3"></div>
+<div play="2.mp3" class="aud4"></div>
+
+
+<div ques itsdgraggable src="url('a1.png')"  class="a1" ></div>
+<div ques itsdgraggable src="url('a2.png')"  class="a2" ></div>
+<div ques itsdgraggable src="url('a3.png')"  class="a3" ></div>
+<div ques itsdgraggable src="url('a4.png')"  class="a4" ></div>
+
+<div ans itsdgraggable src="url('b1.png')" class="b1" ></div>
+<div ans itsdgraggable src="url('b1.png')" class="b2" ></div>
+<div ans itsdgraggable src="url('b1.png')" class="b3" ></div>
+<div ans itsdgraggable src="url('b1.png')" class="b4" ></div>
+
+<div tiktok class="t1"></div>
+<div tiktok class="t2"></div>
+<div tiktok class="t3"></div>
+<div tiktok class="t4"></div>
+
+<div tiktok class="c1"></div>
+<div tiktok class="c2"></div>
+<div tiktok class="c3"></div>
+<div tiktok class="c4"></div>
+
+<div tiktok class="design1"> </div>
+
+
+<audio controls id="audio" style= "display:none">   
+  <source src="1.mp3" type="audio/mpeg">
+</audio>
+<script type="text/javascript">
+	var audio=document.getElementById("audio")
+	var audiotags=document.querySelectorAll("div[play]")
+	for(var i=0;i<audiotags.length;i++)
+	{
+		audiotags[i].onmouseover=function(){
+			document.querySelector("audio").children[0].src="1.mp3"
+			// audio.src=this.getAttribute("play")
+				audio.play()
+		}
+		audiotags[i].ontouchstart=function(){
+			document.querySelector("audio").children[0].src="1.mp3"
+			// audio.src=this.getAttribute("play")
+				audio.play()
+		}
+		
+		audiotags[i].onmouseout=function(){
+			audio.src=this.getAttribute("play")
+			audio.pause()
+		}
+		audiotags[i].ontouchmove=function(){
+			audio.src=this.getAttribute("play")
+			audio.pause()
+		}
+
+	}
+</script>
+
+
+
+<script>
+var answers=[
+		"url('a1.png')",
+		"url('a2.png')",
+		"url('a3.png')",
+		"url('a4.png')",
+
+]
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text",ev.target.getAttribute("src"));
+  ev.dataTransfer.setData("class",ev.target.className);
+}
+
+function drop(ev) {
+		ev.preventDefault();
+	  	var data = ev.dataTransfer.getData("text");
+	  	var cl = ev.dataTransfer.getData("class");
+      // console.log(ev.target.style.backgroundImage)
+        document.querySelector(`.${cl}`).setAttribute("src",ev.target.getAttribute("src"))
+        document.querySelector(`.${cl}`).style.backgroundImage=ev.target.getAttribute("src")
+        ev.target.style.backgroundImage=data
+        ev.target.setAttribute("src",data)
+}
+
+
+  var a=document.querySelectorAll("[itsdgraggable]")
+  for(i=0;i<a.length;i++)
+  {
+  		a[i].setAttribute("draggable",true)
+  		// a[i].setAttribute("src",`url('${a[i].className[0]}1.png')`)
+  		a[i].ondragstart=function(event){
+  			drag(event)	
+  		}
+  		a[i].ondrop=function(event){
+  			drop(event)	
+  		}
+  		a[i].ondragover=function(event){
+  			allowDrop(event)	
+  		}
+  }
+
+  let c1=document.querySelectorAll("[tiktok]")
+  let c=document.querySelectorAll("[ans]")
+  c=Array.from(c)
+  c1=Array.from(c1)
+    
+  function checkAnswers()
+  {
+  	c.filter(function(item,index){
+  			if(item.getAttribute("src")!=answers[index])
+  			{
+  				item.style.border="2px solid transparent"
+          c1[index].style.backgroundImage="url(cross.png)"
+  			}
+  			else
+  			{
+
+  				item.style.border="2px solid transparent"
+          c1[index].style.backgroundImage="url(tick.png)"
+  			}
+          c1[index].style.opacity=1
+  	})
+  }
+
+  function resetall1()
+  {
+    location.reload()
+  }
+  function resetall()
+  {
+  	let c=document.querySelectorAll("[ans]")
+    let ans=document.querySelectorAll("[ans]")
+    let ques=document.querySelectorAll("[ques]")
+  	c=Array.from(c)
+  	c.filter(function(item,index){
+  				item.style.border="2px solid transparent"
+  	})
+   
+    for(i=0;i<$("[ques]").length;i++)
+    {
+      $("[ques]")[i].style.opacity=1 
+      $("[ques]")[i].style.backgroundImage=answers[i] 
+      $("[ques]")[i].setAttribute("src",answers[i] )
+      $("[ques]")[i].style.borderColor="transparent"
+    }
+    for(i=0;i<$("[ans]").length;i++)
+    {
+      $("[ans]")[i].style.opacity=1 
+      $("[ans]")[i].style.backgroundImage="url('b1.png')" 
+      $("[ans]")[i].setAttribute("src",answers[i] )
+      $("[ans]")[i].style.borderColor="transparent"
+    }
+    for(i=0;i<$("[tiktok]").length;i++)
+    {
+     $("[tiktok]")[i].style.opacity=0 
+    }
+  }
+  function soltuion()
+  {
+  	let c=document.querySelectorAll("[ans]")
+  	let d=document.querySelectorAll("[ques]")
+    let e=document.querySelectorAll("[tiktok]")
+
+  	for(i=0;i<d.length;i++)
+  	{
+  		d[i].style.opacity=0
+  	}
+  	c=Array.from(c)
+    e=Array.from(e)
+  	c.filter(function(item,index){
+			item.style.backgroundImage=answers[index]
+      item.style.borderColor="transparent"
+			item.setAttribute("src",answers[index])
+      e[index].style.opacity=0
+  	})
+
+  }
+  function $(css)
+  {
+    return Array.from(document.querySelectorAll(css))
+  }
+
+  c1.filter(function(item){
+    item.style.opacity=0
+  })
+
+</script>
+
+<style type="text/css"></style>
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 2px solid #aaaaaa;
+}
+
+div
+{
+  border:2px solid transparent;
+}
+</style>
+<script>
+  for(var k=0;k<$("[link]").length;k++)
+  {
+      $("[link]")[k].onclick=function(){
+        document.location.assign(this.getAttribute("link"))
+      }
+  }
+
+</script>
+
+
+<style >
+  body
+  {
+    margin:0;
+    background: #5e5f64;
+  }
+  @media (max-width:900px)
+  {
+    body
+    {
+      zoom:0.9;
+    }
+  }
+  @media (min-width:1200px)
+  {
+    body
+    {
+      zoom:0.8;
+    }
+  }
+  
+    
+</style>
+<style >
+  body
+    {
+      zoom:0.8;
+    }
+  }
+  @media (min-width:1200px)
+  {
+    body
+    {
+      zoom:0.7;
+    }
+</style>
+
+
+<script type="text/javascript">
+  if(navigator.appVersion.toString().includes("Mac"))
+  {
+    document.body.style.zoom="0.02 !important"
+    document.body.style.webKitZoom="0.02 !important"
+  }
+</script>

@@ -1,0 +1,479 @@
+.bg {
+  background-image: url("bg.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 589px;
+  z-index: 3;
+}
+
+.top_butt1a {
+  background-image: url("top_butt1b.png");
+  position: absolute;
+  left: 7px;
+  top: 18px;
+  width: 89px;
+  height: 36px;
+  z-index: 7;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.top_butt2a {
+  background-image: url("top_butt2a.png");
+  position: absolute;
+  left: 110px;
+  top: 18px;
+  width: 89px;
+  height: 36px;
+  z-index: 6;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.top_butt2a:hover {
+  background-image: url("top_butt2b.png");
+  }
+
+.top_butt3a {
+  background-image: url("top_butt3a.png");
+  position: absolute;
+  left: 211px;
+  top: 18px;
+  width: 89px;
+  height: 36px;
+  z-index: 5;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.top_butt3a:hover {
+  background-image: url("top_butt3b.png");
+  }
+
+.home {
+  background-image: url("home.png");
+  position: absolute;
+  left: 1143px;
+  top: 8px;
+  width: 46px;
+  height: 56px;
+  z-index: 4;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.topic {
+  background-image: url("topic.png");
+  position: absolute;
+  left: 13px;
+  top: 92px;
+  width: 435px;
+  height: 37px;
+  z-index: 60;
+  z-index: 13;
+  background-repeat: no-repeat;
+}
+
+.drag_drop_text {
+  background-image: url("drag_drop_text.png");
+  position: absolute;
+  left: 583px;
+  top: 124px;
+  width: 265px;
+  height: 49px;
+  z-index: 20;
+}
+
+
+.reset {
+  background-image: url("reset.png");
+  position: absolute;
+  left: 389px;
+  top: 19px;
+  width: 83px;
+  height: 35px;
+  z-index: 18;
+}
+.first {
+  background-image: url("first.png");
+  position: absolute;
+  left: 885px;
+  top: 7px;
+  width: 39px;
+  height: 57px;
+  z-index: 17;
+}
+.back {
+  background-image: url("back.png");
+  position: absolute;
+  left: 943px;
+  top: 5px;
+  width: 40px;
+  height: 59px;
+  z-index: 16;
+}
+.last {
+  background-image: url("last.png");
+  position: absolute;
+  left: 1062px;
+  top: 7px;
+  width: 38px;
+  height: 57px;
+  z-index: 15;
+}
+.next {
+  background-image: url("next.png");
+  position: absolute;
+  left: 1002px;
+  top: 5px;
+  width: 40px;
+  height: 59px;
+  z-index: 14;
+  cursor: pointer; 
+}
+.sol {
+  background-image: url("sol.png");
+  position: absolute;
+  left: 681px;
+  top: 19px;
+  width: 128px;
+  height: 35px;
+  z-index: 13;
+}
+.corr {
+  background-image: url("corr.png");
+  position: absolute;
+  left: 486px;
+  top: 19px;
+  width: 182px;
+  height: 35px;
+  z-index: 12;
+}
+
+
+.guidelines {
+  background-image: url("guidelines.png");
+  position: absolute;
+  left: 862px;
+  top: 96px;
+  width: 327px;
+  height: 26px;
+  z-index: 21;
+}
+
+
+
+.flag_eng {
+  background-image: url("flag_eng.png");
+  position: absolute;
+  left: 1145px;
+  top: 140px;
+  width: 36px;
+  height: 24px;
+  z-index: 72;
+  background-repeat: no-repeat;
+}
+
+
+.audio {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 593px;
+  z-index: 35;
+}
+.aud1 {
+  background-image: url("aud1.png");
+  position: absolute;
+  left: 13px;
+  top: 205px;
+  width: 36px;
+  height: 34px;
+  z-index: 33;
+}
+.aud2 {
+  background-image: url("aud1.png");
+  position: absolute;
+  left: 13px;
+  top: 309px;
+  width: 36px;
+  height: 34px;
+  z-index: 32;
+}
+.aud3 {
+  background-image: url("aud1.png");
+  position: absolute;
+  left: 13px;
+  top: 409px;
+  width: 36px;
+  height: 34px;
+  z-index: 31;
+}
+.aud4 {
+  background-image: url("aud1.png");
+  position: absolute;
+  left: 13px;
+  top: 503px;
+  width: 36px;
+  height: 34px;
+  z-index: 30;
+}
+
+
+
+[play]:hover {
+  background-image: url("aud1b.png");
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+
+.text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 593px;
+  z-index: 28;
+}
+.text1 {
+  background-image: url("text1.png");
+  position: absolute;
+  left: 65px;
+  top: 204px;
+  width: 106px;
+  height: 43px;
+  z-index: 27;
+}
+.text2 {
+  background-image: url("text2.png");
+  position: absolute;
+  left: 66px;
+  top: 307px;
+  width: 125px;
+  height: 33px;
+  z-index: 26;
+}
+.text3 {
+  background-image: url("text3.png");
+  position: absolute;
+  left: 65px;
+  top: 404px;
+  width: 109px;
+  height: 44px;
+  z-index: 25;
+}
+.text4 {
+  background-image: url("text4.png");
+  position: absolute;
+  left: 64px;
+  top: 501px;
+  width: 87px;
+  height: 44px;
+  z-index: 24;
+}
+
+
+
+
+.drop_box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 725px;
+  z-index: 44;
+}
+.drop_box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 725px;
+  z-index: 41;
+}
+.drop_box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 593px;
+  z-index: 41;
+}
+.b1 {
+  background-image: url("b1.png");
+  position: absolute;
+  left: 251px;
+  top: 191px;
+  width: 423px;
+  height: 70px;
+  z-index: 40;
+}
+.b2 {
+  background-image: url("b1.png");
+  position: absolute;
+  left: 251px;
+  top: 291px;
+  width: 423px;
+  height: 70px;
+  z-index: 39;
+}
+.b3 {
+  background-image: url("b1.png");
+  position: absolute;
+  left: 251px;
+  top: 391px;
+  width: 423px;
+  height: 70px;
+  z-index: 38;
+}
+.b4 {
+  background-image: url("b1.png");
+  position: absolute;
+  left: 251px;
+  top: 492px;
+  width: 423px;
+  height: 70px;
+  z-index: 37;
+}
+
+
+.a2 {
+  background-image: url("a2.png");
+  position: absolute;
+  left: 758px;
+  top: 491px;
+  width: 423px;
+  height: 70px;
+  z-index: 46;
+  background-repeat: no-repeat;
+}
+.a4 {
+  background-image: url("a4.png");
+  position: absolute;
+  left: 759px;
+  top: 391px;
+  width: 423px;
+  height: 70px;
+  z-index: 45;
+  background-repeat: no-repeat;
+}
+.a1 {
+  background-image: url("a1.png");
+  position: absolute;
+  left: 758px;
+  top: 291px;
+  width: 423px;
+  height: 70px;
+  z-index: 44;
+  background-repeat: no-repeat;
+}
+.a3 {
+  background-image: url("a3.png");
+  position: absolute;
+  left: 758px;
+  top: 190px;
+  width: 423px;
+  height: 70px;
+  z-index: 43;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.c1 {
+  background-image: url("cross.png");
+  position: absolute;
+  left: 685px;
+  top: 214px;
+  width: 24px;
+  height: 22px;
+  z-index: 52;
+}
+.c2 {
+  background-image: url("cross.png");
+  position: absolute;
+  left: 685px;
+  top: 315px;
+  width: 24px;
+  height: 22px;
+  z-index: 51;
+}
+.c3 {
+  background-image: url("cross.png");
+  position: absolute;
+  left: 685px;
+  top: 411px;
+  width: 24px;
+  height: 22px;
+  z-index: 50;
+}
+.c4 {
+  background-image: url("cross.png");
+  position: absolute;
+  left: 685px;
+  top: 513px;
+  width: 24px;
+  height: 22px;
+  z-index: 49;
+}
+
+
+
+
+.t1 {
+  background-image: url("tick.png");
+  position: absolute;
+  left: 685px;
+  top: 215px;
+  width: 32px;
+  height: 30px;
+  z-index: 58;
+  background-repeat: no-repeat;
+}
+.t2 {
+  background-image: url("tick.png");
+  position: absolute;
+  left: 685px;
+  top: 317px;
+  width: 32px;
+  height: 30px;
+  z-index: 57;
+  background-repeat: no-repeat;
+}
+.t3 {
+  background-image: url("tick.png");
+  position: absolute;
+  left: 685px;
+  top: 412px;
+  width: 32px;
+  height: 30px;
+  z-index: 56;
+  background-repeat: no-repeat;
+}
+.t4 {
+  background-image: url("tick.png");
+  position: absolute;
+  left: 685px;
+  top: 514px;
+  width: 32px;
+  height: 30px;
+  z-index: 55;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+div
+{
+   background-repeat: no-repeat;   cursor: pointer;  
+}
+
